@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" charset="utf-8"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Black+Ops+One|Open+Sans"
+      rel="stylesheet"
+    />
+    <title>Batalha Naval - JS</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-head">
+        <img src="images/Titulo.png" class="title" alt="titulo" />
+      </div>
+
+      <div class="main-wrapper">
+        <div class="side-bar">
+          <p>Navios para ser posicionados: <span id="ships-to-place"></span></p>
+          <div class="button-wrapper">
+            <p class="small-text">Escolha a direção do navio</p>
+            <div class="player-choice-button" id="placeHorizontal">
+              Horizontal
+            </div>
+            <div class="player-choice-button" id="placeVertical">Vertical</div>
+            <div class="ship-select">
+              <p class="small-text">Escolha um navio</p>
+              <div class="ship-button" id="airplane" data-shipsize="5">
+                Porta-Avião
+              </div>
+              <div class="ship-button" id="tank1" data-shipsize="4">
+                Navio-Tanque
+              </div>
+              <div class="ship-button" id="tank2" data-shipsize="4">
+                Navio-Tanque
+              </div>
+              <div class="ship-button" id="contra1" data-shipsize="3">
+                Contratorpedeiro
+              </div>
+              <div class="ship-button" id="contra2" data-shipsize="3">
+                Contratorpedeiro
+              </div>
+              <div class="ship-button" id="contra3" data-shipsize="3">
+                Contratorpedeiro
+              </div>
+              <div class="ship-button" id="sub1" data-shipsize="2">
+                Submarino
+              </div>
+              <div class="ship-button" id="sub2" data-shipsize="2">
+                Submarino
+              </div>
+              <div class="ship-button" id="sub3" data-shipsize="2">
+                Submarino
+              </div>
+              <div class="ship-button" id="sub4" data-shipsize="2">
+                Submarino
+              </div>
+            </div>
+            <div class="reset-button">RECOMEÇAR</div>
+          </div>
+        </div>
+        <div class="central-wrapper">
+          <div class="info-bar">
+            <div class="messages">
+              <span class="error-message">Coloque seus navios</span>
+            </div>
+            <div class="scores">
+              <div>Navios do jogador: <span id="ships-destroyed">10</span></div>
+              <div>
+                Navios do computador: <span id="comp-destroyed">10</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-wrapper">
+            <div class="player-wrapper">
+              <div class="player-grid"></div>
+
+              <h2>Jogador</h2>
+            </div>
+
+            <div class="computer-wrapper">
+              <div class="grid"></div>
+
+              <h2>Computador</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-wrapper">
+        <div class="modal">
+          <div class="gameover">
+            <div class="gameover-text"></div>
+            <div class="play-again-button">JOGAR NOVAMENTE?</div>
+          </div>
+          <div class="instructions-column">
+            <div class="instructions-text">
+              <h3>BATALHA NAVAL</h3>
+
+              <ol>
+                <li>
+                  Jogo de Batalha Naval desenvolvido para a disciplina de
+                  Paradigmas de Programação - UEPB.
+                </li>
+                <ul>
+                  <li>GRUPO:</li>
+                  <li>Eduarda Cunha</li>
+                  <li>Rafaela Candido</li>
+                  <li>Jefferson Gomes</li>
+                  <li>Ângelo Gabriel</li>
+                  <li>Kennedy Johnson</li>
+                </ul>
+              </ol>
+              <div>
+                <div class="start-button">COMECE A BATALHA!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
