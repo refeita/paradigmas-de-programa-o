@@ -1,3 +1,5 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/refeita/paradigmas-de-programacao)
+
 📌 Sobre
 
 Jogo Batalha Naval da disciplina de paradigmas de programação UEPB - 2021.2
